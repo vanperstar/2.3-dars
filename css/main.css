@@ -1,0 +1,648 @@
+/* @font-face {
+    font-family: 'Catamaran sans=serif';
+    src: url(../fonts/Catamaran-Black.ttf);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Catamaran sans-serif';
+    src: url(../fonts/Barlow-Regular.ttf);
+    font-weight: 400;
+} */
+
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Catamaran', sans-serif;
+    font-family: 'Fraunces', serif;
+    font-size: 18px;
+}
+
+/* Globol styles */
+
+.container{
+    max-width: 1280px;
+    margin: auto;
+    padding: 0 80px;
+}
+
+.nav{
+    list-style: none;
+}
+
+.btn{
+    border: none;
+    background: #0E8784;
+    border-radius: 6px;
+}
+
+/* Header styles */
+
+.header{
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.header_logo_img{
+    display: block;
+}
+
+.header_nav{
+    list-style: none;
+    display: flex;
+}
+
+
+.header_nav_item{
+    margin-right: 20px;
+}
+
+.header_nav_link{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+    color: #83888F;
+}
+
+/* Hero styles */
+
+.hero{
+    margin-bottom: 200px;
+    height: 450px;
+    border-radius: 8px;
+    background: url(../img/bacground_img.png);
+}
+
+.hero_block{
+    padding: 100px 0;
+}
+
+.hero_title{
+    margin-bottom: 32px;
+    width: 480px;
+    height: 72px;
+    font-family: 'Fraunces 9pt';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 72px;
+    color: #FEFCF7;
+}
+
+.hero_description{
+    width: 445px;
+    height: 72px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    color: #FEFCF7;
+}
+
+
+/* Block styles */
+
+.block{
+    display: flex;
+    padding-top: 20px;
+    background: url(../img/black.png);
+    position: relative;
+}
+
+.block_item{
+    padding-top: 170px;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.block_number{
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 72px;
+    color: #FDD6BA;
+}
+
+.block_title{
+    padding: 40px 0;
+    width: 255px;
+    width: 72px;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+    color: #FEFCF7;
+}
+
+.block_description{
+    padding-bottom: 200px;
+    width: 285px;
+    height: 132px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FEFCF7;
+}
+
+
+
+/* Content styles */
+
+.content{
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+.content_nav_link{
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333D4B;
+}
+
+.content_nav_item{
+    margin: 20px 0;
+}
+
+.content_line{
+    width: 205px;
+    height: 1px;
+    background: #83888F;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+}
+
+
+/* Drink styles */
+
+.drink{
+    padding-left: 125px;
+}
+
+.drink_title{
+    margin-bottom: 50px;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: #83888F;
+}
+
+.drink_items{
+    display: flex;
+}
+
+.drink_capsule{
+    margin-right: 23px;
+    width: 228px;
+    height: 250px;
+    background: #F4F1EB;
+    border-radius: 8px;
+}
+
+.drink_capsule_title{
+    padding: 32px 0;
+    margin-left: 32px;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333D4B;
+}
+
+.drink_capsule_description{
+    width: 172px;
+    margin-left: 32px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333D4B;
+}
+
+.drink_filter{
+    margin-right: 23px;
+    width: 228px;
+    height: 250px;
+    background: #0E8784;
+    border-radius: 8px;
+}
+
+.drink_filter_title{
+    padding: 32px 0;
+    margin-left: 32px;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+.drink_filter_description{
+    width: 172px;
+    margin-left: 32px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FEFCF7;
+}
+
+
+
+/* Box styles */
+
+
+.box{
+    padding-bottom: 165px;
+}
+
+.type{
+    margin-left: 335px;
+}
+
+.type_item{
+    display: flex;
+}
+
+.type_title{
+    margin-bottom: 55px;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: #83888F;
+}
+
+.origin{
+    margin-right: 23px;
+    width: 228px;
+    height: 250px;
+    background: #F4F1EB;
+    border-radius: 8px;
+}
+
+.origin_title{
+    padding: 32px 0;
+    margin-left: 32px;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333D4B;
+}
+
+.origin_description{
+    width: 172px;
+    margin-left: 32px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333D4B;
+}
+
+.decaf{
+    width: 228px;
+    height: 250px;
+    background: #0E8784;
+    border-radius: 8px;
+}
+
+.decaf_title{
+    padding: 32px 0;
+    margin-left: 32px;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+.decaf_description{
+    width: 172px;
+    margin-left: 32px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FEFCF7;
+}
+
+
+/* Would styles */
+
+
+.would{
+    padding-top: 85px;
+    margin-left: 335px;
+}
+
+.would_title{
+    margin-bottom: 55px;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: #83888F;
+}
+
+.would_item{
+    display: flex;
+}
+
+.would_250{
+    margin-right: 23px;
+    width: 228px;
+    height: 250px;
+    background: #0E8784;
+    border-radius: 8px;   
+}
+
+.would_250_title{
+    padding: 32px 0;
+    margin-left: 32px;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+.would_250_description{
+    width: 172px;
+    margin-left: 32px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FEFCF7;
+}
+
+.would_500{
+    margin-right: 23px;
+    width: 228px;
+    height: 250px;
+    background: #F4F1EB;
+    border-radius: 8px;
+}
+
+.would_500_title{
+    padding: 32px 0;
+    margin-left: 32px;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333D4B;
+}
+
+.would_500_description{
+    width: 172px;
+    margin-left: 32px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333D4B;
+}
+
+
+/* Grind styles */
+
+.grind{
+    padding-top: 85px;
+    margin-left: 335px;
+}
+
+.grind_title{
+    margin-bottom: 55px;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: #83888F;
+}
+
+.grind_item{
+    display: flex;
+}
+
+.filter{
+    margin-right: 23px;
+    width: 228px;
+    height: 250px;
+    background: #F4F1EB;
+    border-radius: 8px;
+}
+
+.filter_title{
+    padding: 32px 0;
+    margin-left: 32px;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333D4B;
+}
+
+.filter_description{
+    width: 172px;
+    margin-left: 32px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333D4B;
+}
+
+.cafetiere{
+    margin-right: 23px;
+    width: 228px;
+    height: 250px;
+    background: #0E8784;
+    border-radius: 8px;  
+}
+
+.cafetiere_title{
+    padding: 32px 0;
+    margin-left: 32px;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+.cafetiere_description{
+    width: 172px;
+    margin-left: 32px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FEFCF7;
+}
+
+
+/* Deliver styles */
+
+.deliver{
+    padding-top: 85px;
+    margin-left: 335px;
+}
+
+.deliver_title{
+    margin-bottom: 55px;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: #83888F;
+}
+
+.deliver_item{
+    display: flex;
+}
+
+.every{
+    margin-right: 23px;
+    width: 228px;
+    height: 250px;
+    background: #0E8784;
+    border-radius: 8px;
+}
+
+.every_title{
+    padding: 32px 0;
+    margin-left: 32px;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+.every_description{
+    width: 172px;
+    margin-left: 32px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FEFCF7;
+}
+
+.month{
+    margin-right: 23px;
+    width: 228px;
+    height: 250px;
+    background: #F4F1EB;
+    border-radius: 8px;
+}
+
+.month_title{
+    padding: 32px 0;
+    margin-left: 32px;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333D4B;
+}
+
+.month_description{
+    width: 172px;
+    margin-left: 32px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333D4B;
+}
+
+/* Cafetiera styles */
+
+.cafetiera{
+    padding-top: 85px;
+    margin-left: 335px;
+}
+
+.cafetiera_item{
+    width: 730px;
+    height: 180px;
+    background: #2C343E;
+
+}
+
+.cafetiera_title{
+    padding-top: 20px;
+    margin-left: 60px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.cafetiera_description{
+    margin-left: 60px;
+    width: 500px;
+    height: 120px;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+
+.btn-success{
+    margin-top: 50px;
+    margin-left: 873px;
+    padding: 15px 35px;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #FEFCF7;
+}
+
+
+
+/* Footer styles */
+
+.footer{
+    margin-bottom: 150px;
+    align-items: center;
+    width: 1280px;
+    height: 100px;
+    left: 80px;
+    top: 4234px;
+    background: #2C343E;
+    display: flex;
+}
+
+.footer_logo{
+    margin-right: 105px;
+}
+
+.footer_nav{
+    list-style: none;
+    display: flex;
+}
+
+
+.footer_nav_item{
+    margin-right: 20px;
+}
+
+.footer_nav_link{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+    color: #83888F;
+}
+
+.footer_link{
+    margin-left: 335px;
+}
+
+.footer_link_img{
+    margin-right: 20px;
+    width: 14px;
+    height: 14px;
+}
